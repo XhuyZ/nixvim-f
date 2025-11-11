@@ -32,7 +32,7 @@
         shellHook = ''
           ${config.pre-commit.installationScript}
 
-          echo "🚀 Khanelivim development shell"
+          echo "🚀 XhuyZ development shell"
           echo ""
           echo "🔧 Available commands:"
           echo "  new-plugin <name> <type> - Generate new plugin template"
