@@ -26,7 +26,7 @@
 
   plugins = {
     dap = {
-      enable = lib.elem "dap" config.khanelivim.debugging.adapters;
+      enable = lib.elem "dap" config.xhuyzvim.debugging.adapters;
 
       lazyLoad.settings = {
         # NOTE: Couldn't get lazy loading to work any other way...

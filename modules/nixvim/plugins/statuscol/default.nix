@@ -1,7 +1,7 @@
 { config, ... }:
 {
   plugins.statuscol = {
-    enable = config.khanelivim.ui.statusColumn == "statuscol";
+    enable = config.xhuyzvim.ui.statusColumn == "statuscol";
 
     lazyLoad.settings.event = [ "DeferredUIEnter" ];
 

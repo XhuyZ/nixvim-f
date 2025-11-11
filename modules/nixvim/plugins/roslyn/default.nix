@@ -7,7 +7,7 @@
 {
   plugins = {
     roslyn = {
-      enable = config.khanelivim.lsp.csharp == "roslyn";
+      enable = config.xhuyzvim.lsp.csharp == "roslyn";
 
       lazyLoad.settings.ft = [
         "cs"
@@ -57,7 +57,7 @@
   # TODO: https://github.com/dotnet/roslyn/issues/79939
   # Roslyn doesn't follow lsp spec and noice expects it to
   # Just disable progress for now
-  autoCmd = lib.mkIf (config.khanelivim.lsp.csharp == "roslyn") [
+  autoCmd = lib.mkIf (config.xhuyzvim.lsp.csharp == "roslyn") [
     {
       event = [ "FileType" ];
       pattern = [

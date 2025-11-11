@@ -6,7 +6,7 @@
 }:
 {
   lsp.servers.nil_ls = {
-    enable = config.khanelivim.lsp.nix == "nil-ls";
+    enable = config.xhuyzvim.lsp.nix == "nil-ls";
 
     config.settings = {
       formatting = {

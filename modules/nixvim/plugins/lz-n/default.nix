@@ -1,7 +1,7 @@
 { config, ... }:
 {
   plugins = {
-    lzn-auto-require.enable = config.khanelivim.loading.strategy == "lazy";
-    lz-n.enable = config.khanelivim.loading.strategy == "lazy";
+    lzn-auto-require.enable = config.xhuyzvim.loading.strategy == "lazy";
+    lz-n.enable = config.xhuyzvim.loading.strategy == "lazy";
   };
 }

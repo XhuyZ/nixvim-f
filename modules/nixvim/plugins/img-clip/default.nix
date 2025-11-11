@@ -3,7 +3,7 @@
   config = {
     plugins = {
       img-clip = {
-        enable = lib.elem "img-clip" config.khanelivim.utilities.clipboard;
+        enable = lib.elem "img-clip" config.xhuyzvim.utilities.clipboard;
         lazyLoad.settings = {
           event = [ "DeferredUIEnter" ];
           keys = [

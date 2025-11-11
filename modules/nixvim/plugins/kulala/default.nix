@@ -15,7 +15,7 @@
 
   plugins = {
     kulala = {
-      enable = config.khanelivim.editor.httpClient == "kulala";
+      enable = config.xhuyzvim.editor.httpClient == "kulala";
 
       lazyLoad.settings = {
         ft = [ "http" ];

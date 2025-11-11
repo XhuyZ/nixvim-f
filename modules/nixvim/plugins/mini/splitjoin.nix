@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  plugins.mini-splitjoin = lib.mkIf (config.khanelivim.text.splitJoin == "mini-splitjoin") {
+  plugins.mini-splitjoin = lib.mkIf (config.xhuyzvim.text.splitJoin == "mini-splitjoin") {
     enable = true;
     settings = {
       mappings = {

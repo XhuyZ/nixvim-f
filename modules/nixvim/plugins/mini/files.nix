@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  keymaps = lib.mkIf (config.khanelivim.editor.fileManager == "mini-files") [
+  keymaps = lib.mkIf (config.xhuyzvim.editor.fileManager == "mini-files") [
     {
       mode = "n";
       key = "<leader>E";
@@ -11,7 +11,7 @@
     }
   ];
 
-  plugins.mini-files = lib.mkIf (config.khanelivim.editor.fileManager == "mini-files") {
+  plugins.mini-files = lib.mkIf (config.xhuyzvim.editor.fileManager == "mini-files") {
     enable = true;
   };
 }

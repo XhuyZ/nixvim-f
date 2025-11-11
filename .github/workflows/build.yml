@@ -33,7 +33,7 @@ jobs:
       - name: Setup Cachix
         uses: cachix/cachix-action@v16
         with:
-          name: khanelivim
+          name: xhuyzvim
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - name: Build
         run: |

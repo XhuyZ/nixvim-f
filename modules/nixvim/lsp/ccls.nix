@@ -4,7 +4,7 @@
     lsp = {
       servers = {
         ccls = {
-          enable = config.khanelivim.lsp.cpp == "ccls";
+          enable = config.xhuyzvim.lsp.cpp == "ccls";
 
           initOptions.compilationDatabaseDirectory = "build";
         };

@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  plugins.mini-comment = lib.mkIf (lib.elem "mini-comment" config.khanelivim.text.comments) {
+  plugins.mini-comment = lib.mkIf (lib.elem "mini-comment" config.xhuyzvim.text.comments) {
     enable = true;
     settings = {
       mappings = {

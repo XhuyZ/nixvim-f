@@ -61,7 +61,7 @@
             options.desc = "Toggle Animations";
           }
         ]
-        ++ lib.optionals (config.khanelivim.ui.indentGuides == "snacks") [
+        ++ lib.optionals (config.xhuyzvim.ui.indentGuides == "snacks") [
           {
             mode = "n";
             key = "<leader>ui";

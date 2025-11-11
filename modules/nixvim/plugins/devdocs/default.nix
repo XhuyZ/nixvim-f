@@ -6,7 +6,7 @@
 {
   plugins = {
     devdocs = {
-      enable = lib.elem "devdocs" config.khanelivim.documentation.viewers;
+      enable = lib.elem "devdocs" config.xhuyzvim.documentation.viewers;
 
       lazyLoad.settings.cmd = [
         "DevDocs"

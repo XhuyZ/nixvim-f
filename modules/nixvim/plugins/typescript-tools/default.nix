@@ -2,7 +2,7 @@
 {
   plugins = {
     typescript-tools = {
-      enable = config.khanelivim.lsp.typescript == "typescript-tools";
+      enable = config.xhuyzvim.lsp.typescript == "typescript-tools";
 
       lazyLoad.settings.ft = [
         "typescript"

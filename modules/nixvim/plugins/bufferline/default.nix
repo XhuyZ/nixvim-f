@@ -6,13 +6,13 @@
         right = # Lua
           "'vertical sbuffer %d'";
         close = # Lua
-          if config.khanelivim.ui.bufferDelete == "mini-bufremove" then
+          if config.xhuyzvim.ui.bufferDelete == "mini-bufremove" then
             ''
               function(bufnum)
                 require("mini.bufremove").delete(bufnum)
               end
             ''
-          else if config.khanelivim.ui.bufferDelete == "snacks" then
+          else if config.xhuyzvim.ui.bufferDelete == "snacks" then
             ''
               function(bufnum)
                 require("snacks").bufdelete.delete(bufnum)
@@ -27,7 +27,7 @@
       };
     in
     {
-      enable = config.khanelivim.ui.bufferline == "bufferline";
+      enable = config.xhuyzvim.ui.bufferline == "bufferline";
 
       lazyLoad.settings.event = "DeferredUIEnter";
 

@@ -4,7 +4,7 @@
   ...
 }:
 {
-  extraConfigLua = lib.mkIf (config.khanelivim.text.whitespace == "whitespace-custom") /* Lua */ ''
+  extraConfigLua = lib.mkIf (config.xhuyzvim.text.whitespace == "whitespace-custom") /* Lua */ ''
     local ignored_filetypes = {
       "Avante",
       "AvanteInput",

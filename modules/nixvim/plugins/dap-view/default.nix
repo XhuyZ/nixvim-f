@@ -6,7 +6,7 @@
 {
   plugins = {
     dap-view = {
-      enable = config.khanelivim.debugging.ui == "dap-view";
+      enable = config.xhuyzvim.debugging.ui == "dap-view";
 
       settings = {
         winbar = {
@@ -18,7 +18,7 @@
     };
   };
 
-  keymaps = lib.optionals (config.khanelivim.debugging.ui == "dap-view") [
+  keymaps = lib.optionals (config.xhuyzvim.debugging.ui == "dap-view") [
     {
       mode = "n";
       key = "<leader>du";

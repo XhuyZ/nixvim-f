@@ -2,7 +2,7 @@
 {
   plugins = {
     flash = {
-      enable = config.khanelivim.editor.motion == "flash";
+      enable = config.xhuyzvim.editor.motion == "flash";
 
       lazyLoad.settings.event = "DeferredUIEnter";
 

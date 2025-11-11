@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  plugins = lib.mkIf (config.khanelivim.ui.notifications == "mini-notify") {
+  plugins = lib.mkIf (config.xhuyzvim.ui.notifications == "mini-notify") {
     mini = {
       enable = true;
 

@@ -2,8 +2,7 @@
 {
   plugins = {
     noice = {
-      enable =
-        config.khanelivim.ui.commandline == "noice" || config.khanelivim.ui.notifications == "noice";
+      enable = config.xhuyzvim.ui.commandline == "noice" || config.xhuyzvim.ui.notifications == "noice";
 
       lazyLoad.settings.event = "DeferredUIEnter";
 
@@ -60,7 +59,7 @@
           };
         };
 
-        messages = lib.mkIf (config.khanelivim.ui.notifications == "noice") {
+        messages = lib.mkIf (config.xhuyzvim.ui.notifications == "noice") {
           view = "notify";
           view_error = "notify";
           view_warn = "notify";
@@ -184,7 +183,7 @@
             };
           };
 
-          notify = lib.mkIf (config.khanelivim.ui.notifications == "noice") {
+          notify = lib.mkIf (config.xhuyzvim.ui.notifications == "noice") {
             border = {
               style = "rounded";
             };
@@ -208,16 +207,16 @@
   };
 
   keymaps =
-    lib.optionals (config.plugins.noice.enable && config.khanelivim.ui.notifications == "noice") [
+    lib.optionals (config.plugins.noice.enable && config.xhuyzvim.ui.notifications == "noice") [
       {
         mode = "n";
         key = "<leader>fn";
         action =
-          if config.khanelivim.picker.tool == "snacks" then
+          if config.xhuyzvim.picker.tool == "snacks" then
             "<cmd>Noice snacks<CR>"
-          else if config.khanelivim.picker.tool == "fzf" then
+          else if config.xhuyzvim.picker.tool == "fzf" then
             "<cmd>Noice fzf<CR>"
-          else if config.khanelivim.picker.tool == "telescope" then
+          else if config.xhuyzvim.picker.tool == "telescope" then
             "<cmd>Telescope noice<CR>"
           else
             "<cmd>Noice<CR>"; # Fallback to basic Noice command

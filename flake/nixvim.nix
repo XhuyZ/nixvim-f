@@ -21,7 +21,7 @@
     { system, ... }:
     {
       nixvimConfigurations = {
-        khanelivim = inputs.nixvim.lib.evalNixvim {
+        xhuyzvim = inputs.nixvim.lib.evalNixvim {
           inherit system;
 
           extraSpecialArgs = {

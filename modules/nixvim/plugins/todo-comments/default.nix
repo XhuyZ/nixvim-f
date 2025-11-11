@@ -1,7 +1,7 @@
 { config, lib, ... }:
 {
   plugins.todo-comments = {
-    enable = lib.elem "todo-comments" config.khanelivim.text.patterns;
+    enable = lib.elem "todo-comments" config.xhuyzvim.text.patterns;
 
     lazyLoad = {
       # NOTE: Plugin highlighting feature not used until loaded.
@@ -13,23 +13,23 @@
           ''
             function()
           ''
-          + lib.optionalString (config.khanelivim.picker.tool == "fzf") ''
+          + lib.optionalString (config.xhuyzvim.picker.tool == "fzf") ''
             require('lz.n').trigger_load('fzf-lua')
           ''
           + lib.optionalString config.plugins.trouble.enable ''
             require('lz.n').trigger_load('trouble.nvim')
           ''
-          + lib.optionalString (config.khanelivim.picker.tool == "telescope") ''
+          + lib.optionalString (config.xhuyzvim.picker.tool == "telescope") ''
             require('lz.n').trigger_load('telescope')
           ''
-          + lib.optionalString (config.khanelivim.picker.tool == "snacks") ''
+          + lib.optionalString (config.xhuyzvim.picker.tool == "snacks") ''
             require('lz.n').trigger_load('snacks.nvim')
           ''
           + ''
             end
           ''
         );
-        keys = lib.mkIf (config.khanelivim.picker.tool == "snacks") [
+        keys = lib.mkIf (config.xhuyzvim.picker.tool == "snacks") [
           {
             __unkeyed-1 = "<leader>ft";
             __unkeyed-2 = ''<CMD>lua Snacks.picker.todo_comments({ keywords = { "TODO", "FIX", "FIXME" }})<CR>'';
@@ -40,8 +40,8 @@
           "TodoLocList"
           "TodoQuickFix"
         ]
-        ++ lib.optional (config.khanelivim.picker.tool == "fzf") "TodoFzfLua"
-        ++ lib.optional (config.khanelivim.picker.tool == "telescope") "TodoTelescope"
+        ++ lib.optional (config.xhuyzvim.picker.tool == "fzf") "TodoFzfLua"
+        ++ lib.optional (config.xhuyzvim.picker.tool == "telescope") "TodoTelescope"
         ++ lib.optional config.plugins.trouble.enable "TodoTrouble";
       };
     };
@@ -49,7 +49,7 @@
     keymaps = {
       todoTrouble.key = lib.mkIf config.plugins.trouble.enable "<leader>xq";
       # Fallback if snacks picker not enabled
-      todoFzfLua = lib.mkIf (config.khanelivim.picker.tool == "fzf") {
+      todoFzfLua = lib.mkIf (config.xhuyzvim.picker.tool == "fzf") {
         key = "<leader>ft";
         keywords = [
           "TODO"
@@ -58,7 +58,7 @@
         ];
       };
       # Fallback if no others enabled
-      todoTelescope = lib.mkIf (config.khanelivim.picker.tool == "telescope") {
+      todoTelescope = lib.mkIf (config.xhuyzvim.picker.tool == "telescope") {
         key = "<leader>ft";
         keywords = [
           "TODO"

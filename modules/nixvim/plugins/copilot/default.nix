@@ -14,7 +14,7 @@
 
   plugins = {
     copilot-lua = {
-      enable = config.khanelivim.ai.provider == "copilot";
+      enable = config.xhuyzvim.ai.provider == "copilot";
 
       lazyLoad.settings.event = [ "InsertEnter" ];
 
@@ -69,7 +69,7 @@
     };
 
     copilot-chat = {
-      enable = config.khanelivim.ai.provider == "copilot" && config.khanelivim.ai.chatEnable;
+      enable = config.xhuyzvim.ai.provider == "copilot" && config.xhuyzvim.ai.chatEnable;
 
       lazyLoad.settings.cmd = [
         "CopilotChat"
@@ -203,7 +203,7 @@
   ];
 
   autoCmd =
-    lib.mkIf (config.plugins.copilot-lua.enable && config.khanelivim.completion.tool == "blink")
+    lib.mkIf (config.plugins.copilot-lua.enable && config.xhuyzvim.completion.tool == "blink")
       [
         {
           event = "User";

@@ -2,7 +2,7 @@
 {
   plugins = {
     comment-box = {
-      enable = lib.elem "comment-box" config.khanelivim.text.comments;
+      enable = lib.elem "comment-box" config.xhuyzvim.text.comments;
 
       lazyLoad = {
         settings = {

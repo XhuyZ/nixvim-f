@@ -2,7 +2,7 @@
 {
   plugins = {
     indent-blankline = {
-      enable = config.khanelivim.ui.indentGuides == "indent-blankline";
+      enable = config.xhuyzvim.ui.indentGuides == "indent-blankline";
 
       lazyLoad.settings.event = "DeferredUIEnter";
 

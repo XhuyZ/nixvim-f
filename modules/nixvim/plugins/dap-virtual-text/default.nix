@@ -2,7 +2,7 @@
 {
   plugins = {
     dap-virtual-text = {
-      enable = lib.elem "dap-virtual-text" config.khanelivim.debugging.adapters;
+      enable = lib.elem "dap-virtual-text" config.xhuyzvim.debugging.adapters;
 
       lazyLoad.settings = {
         before.__raw = lib.mkIf config.plugins.lz-n.enable ''

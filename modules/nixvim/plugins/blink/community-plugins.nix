@@ -21,7 +21,7 @@ in
     blink-cmp-git = mkBlinkPlugin { };
     blink-cmp-spell = mkBlinkPlugin { };
     blink-copilot = mkBlinkPlugin {
-      enable = config.khanelivim.ai.provider == "copilot" && config.khanelivim.completion.tool == "blink";
+      enable = config.xhuyzvim.ai.provider == "copilot" && config.xhuyzvim.completion.tool == "blink";
     };
     blink-emoji = mkBlinkPlugin { };
     blink-ripgrep = mkBlinkPlugin { };

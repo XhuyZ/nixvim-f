@@ -17,7 +17,7 @@
       ];
     in
     {
-      enable = lib.elem "markview" config.khanelivim.text.markdownRendering;
+      enable = lib.elem "markview" config.xhuyzvim.text.markdownRendering;
 
       lazyLoad.settings.ft = filetypes;
 

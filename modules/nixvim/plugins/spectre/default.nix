@@ -2,7 +2,7 @@
 {
   plugins = {
     spectre = {
-      enable = config.khanelivim.editor.search == "spectre";
+      enable = config.xhuyzvim.editor.search == "spectre";
       lazyLoad = {
         settings = {
           cmd = "Spectre";
@@ -11,7 +11,7 @@
     };
   };
 
-  keymaps = lib.mkIf (config.khanelivim.editor.search == "spectre") [
+  keymaps = lib.mkIf (config.xhuyzvim.editor.search == "spectre") [
     {
       mode = "n";
       key = "<leader>rs";

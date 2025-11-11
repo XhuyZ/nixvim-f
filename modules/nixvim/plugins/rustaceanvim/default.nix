@@ -15,7 +15,7 @@
 
   plugins = {
     rustaceanvim = {
-      enable = config.khanelivim.lsp.rust == "rustaceanvim";
+      enable = config.xhuyzvim.lsp.rust == "rustaceanvim";
       settings = {
         dap = {
           adapter = {

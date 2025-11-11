@@ -1,7 +1,7 @@
 {
   plugins = {
     copilot-lsp = {
-      # enable = config.khanelivim.ai.provider == "copilot";
+      # enable = config.xhuyzvim.ai.provider == "copilot";
       enable = true;
 
       settings = {

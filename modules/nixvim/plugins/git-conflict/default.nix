@@ -8,7 +8,7 @@
 {
   plugins = {
     git-conflict = {
-      enable = lib.elem "git-conflict" config.khanelivim.git.integrations;
+      enable = lib.elem "git-conflict" config.xhuyzvim.git.integrations;
       package = self.packages.${system}.git-conflict;
 
       lazyLoad.settings.event = "DeferredUIEnter";

@@ -35,14 +35,14 @@ machines.
 **Option 1: Using `nix run` (Easiest):**
 
 ```bash
-nix run --extra-experimental-features 'nix-command flakes' github:khaneliman/khanelivim
+nix run --extra-experimental-features 'nix-command flakes' github:khaneliman/xhuyzvim
 ```
 
 **Option 2: Build and run locally:**
 
 ```bash
-git clone https://github.com/khaneliman/khanelivim.git
-cd khanelivim
+git clone https://github.com/khaneliman/xhuyzvim.git
+cd xhuyzvim
 nix run
 ```
 
@@ -55,21 +55,21 @@ Add to your Home Manager configuration:
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
-    khanelivim.url = "github:khaneliman/khanelivim";
+    xhuyzvim.url = "github:khaneliman/xhuyzvim";
   };
 
-  outputs = { nixpkgs, home-manager, khanelivim, ... }: {
+  outputs = { nixpkgs, home-manager, xhuyzvim, ... }: {
     homeConfigurations.username = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         {
           home.packages = [
             # Option A: Use default configuration
-            khanelivim.packages.x86_64-linux.default
+            xhuyzvim.packages.x86_64-linux.default
 
             # Option B: Extend with customizations
             (let
-              baseConfig = khanelivim.nixvimConfigurations.x86_64-linux.khanelivim;
+              baseConfig = xhuyzvim.nixvimConfigurations.x86_64-linux.xhuyzvim;
               extendedConfig = baseConfig.extendModules {
                 modules = [
                   {
@@ -481,7 +481,7 @@ respective plugin configurations.
 ### Development Setup
 
 ```bash
-git clone https://github.com/khaneliman/khanelivim.git
-cd khanelivim
+git clone https://github.com/khaneliman/xhuyzvim.git
+cd xhuyzvim
 nix develop
 ```

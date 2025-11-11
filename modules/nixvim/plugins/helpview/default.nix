@@ -1,7 +1,7 @@
 { config, lib, ... }:
 {
   plugins.helpview = {
-    enable = lib.elem "helpview" config.khanelivim.documentation.viewers;
+    enable = lib.elem "helpview" config.xhuyzvim.documentation.viewers;
 
     lazyLoad.settings.ft = "help";
 

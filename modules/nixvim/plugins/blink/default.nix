@@ -11,7 +11,7 @@
   ];
 
   plugins.blink-cmp = {
-    enable = config.khanelivim.completion.tool == "blink";
+    enable = config.xhuyzvim.completion.tool == "blink";
 
     lazyLoad.settings.event = [
       "InsertEnter"

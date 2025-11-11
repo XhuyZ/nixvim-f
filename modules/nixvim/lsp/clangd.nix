@@ -6,7 +6,7 @@
 }:
 {
   lsp.servers.clangd = {
-    enable = config.khanelivim.lsp.cpp == "clangd";
+    enable = config.xhuyzvim.lsp.cpp == "clangd";
 
     config = {
       settings.init_options = {

@@ -43,13 +43,13 @@
       cmake.enable = true;
       copilot.enable = !config.plugins.copilot-lua.enable;
       cssls.enable = true;
-      dockerls.enable = lib.elem "dockerls" config.khanelivim.lsp.docker;
+      dockerls.enable = lib.elem "dockerls" config.xhuyzvim.lsp.docker;
       # FIXME: broken nixpkgs
-      # docker_language_server.enable = lib.elem "docker-language-server" config.khanelivim.lsp.docker;
+      # docker_language_server.enable = lib.elem "docker-language-server" config.xhuyzvim.lsp.docker;
       # FIXME: [lspconfig] Unable to find ESLint library.
       # eslint.enable = true;
-      emmylua_ls.enable = config.khanelivim.lsp.lua == "emmylua-ls";
-      lua_ls.enable = config.khanelivim.lsp.lua == "lua-ls";
+      emmylua_ls.enable = config.xhuyzvim.lsp.lua == "emmylua-ls";
+      lua_ls.enable = config.xhuyzvim.lsp.lua == "lua-ls";
       fish_lsp.enable = true;
       fsautocomplete.enable = true;
       fsharp_language_server = {
@@ -63,25 +63,25 @@
       };
       gopls.enable = true;
       html.enable = true;
-      java_language_server.enable = config.khanelivim.lsp.java == "java-language-server";
+      java_language_server.enable = config.xhuyzvim.lsp.java == "java-language-server";
       jsonls.enable = true;
       kulala_ls.enable = true;
       marksman.enable = true;
       nushell.enable = true;
-      pyright.enable = config.khanelivim.lsp.python.typeChecker == "pyright";
-      pylsp.enable = config.khanelivim.lsp.python.typeChecker == "pylsp";
-      basedpyright.enable = config.khanelivim.lsp.python.typeChecker == "basedpyright";
+      pyright.enable = config.xhuyzvim.lsp.python.typeChecker == "pyright";
+      pylsp.enable = config.xhuyzvim.lsp.python.typeChecker == "pylsp";
+      basedpyright.enable = config.xhuyzvim.lsp.python.typeChecker == "basedpyright";
       # FIXME: wayland dependency broken darwin again
       qmlls.enable = pkgs.stdenv.hostPlatform.isLinux;
-      ruff.enable = lib.elem "ruff" config.khanelivim.lsp.python.linters;
-      roslyn_ls.enable = config.khanelivim.lsp.csharp == "roslyn_ls";
+      ruff.enable = lib.elem "ruff" config.xhuyzvim.lsp.python.linters;
+      roslyn_ls.enable = config.xhuyzvim.lsp.csharp == "roslyn_ls";
       sqls.enable = true;
       statix.enable = true;
       stylelint_lsp.enable = true;
       tailwindcss.enable = true;
       taplo.enable = true;
-      ts_ls.enable = config.khanelivim.lsp.typescript == "ts_ls";
-      tsgo.enable = config.khanelivim.lsp.typescript == "tsgo";
+      ts_ls.enable = config.xhuyzvim.lsp.typescript == "ts_ls";
+      tsgo.enable = config.xhuyzvim.lsp.typescript == "tsgo";
       yamlls.enable = true;
     };
   };

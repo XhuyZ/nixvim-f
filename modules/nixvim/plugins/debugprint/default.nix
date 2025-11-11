@@ -2,7 +2,7 @@
 {
   plugins = {
     debugprint = {
-      enable = lib.elem "debugprint" config.khanelivim.debugging.adapters;
+      enable = lib.elem "debugprint" config.xhuyzvim.debugging.adapters;
 
       lazyLoad.settings = {
         keys = [

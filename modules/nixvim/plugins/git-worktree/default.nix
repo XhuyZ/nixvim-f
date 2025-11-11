@@ -7,11 +7,11 @@
 let
   # cfg = config.plugins.git-worktree;
 
-  worktreeEnabled = lib.elem "git-worktree" config.khanelivim.git.integrations;
+  worktreeEnabled = lib.elem "git-worktree" config.xhuyzvim.git.integrations;
   worktreeTelescopeEnabled = worktreeEnabled && config.plugins.telescope.enable;
 in
 {
-  extraConfigLua = lib.mkIf (lib.elem "git-worktree" config.khanelivim.git.integrations) ''
+  extraConfigLua = lib.mkIf (lib.elem "git-worktree" config.xhuyzvim.git.integrations) ''
     local Hooks = require("git-worktree.hooks")
     local config = require('git-worktree.config')
     local update_on_switch = Hooks.builtins.update_current_buffer_on_switch
@@ -26,7 +26,7 @@ in
     end)
   '';
 
-  extraPlugins = lib.mkIf (lib.elem "git-worktree" config.khanelivim.git.integrations) (
+  extraPlugins = lib.mkIf (lib.elem "git-worktree" config.xhuyzvim.git.integrations) (
     with pkgs.vimPlugins; [ git-worktree-nvim ]
   );
 

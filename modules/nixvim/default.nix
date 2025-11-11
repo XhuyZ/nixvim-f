@@ -14,7 +14,6 @@ in
     ) [ ] (readDir by-name))
     ++ [
       # keep-sorted start
-      ../khanelivim
       ../xhuyzvim
       ./autocommands.nix
       ./dependencies.nix

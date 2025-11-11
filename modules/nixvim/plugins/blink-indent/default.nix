@@ -7,7 +7,7 @@
 {
   options.plugins.blink-indent = {
     enable = lib.mkEnableOption "blink-indent" // {
-      default = config.khanelivim.ui.indentGuides == "blink-indent";
+      default = config.xhuyzvim.ui.indentGuides == "blink-indent";
     };
 
     package = lib.mkPackageOption pkgs.vimPlugins "blink-indent" {

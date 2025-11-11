@@ -1,13 +1,13 @@
 { config, lib, ... }:
 {
   plugins.toggleterm = {
-    enable = lib.elem "toggleterm" config.khanelivim.ui.terminal;
+    enable = lib.elem "toggleterm" config.xhuyzvim.ui.terminal;
 
     lazyLoad = {
       settings = {
         cmd = "ToggleTerm";
         keys = [
-          "<leader>gg"
+          "<C-t>"
         ];
       };
     };
@@ -27,7 +27,7 @@
     #     desc = "Open Terminal";
     #   };
     # }
-    (lib.mkIf (!lib.elem "snacks-lazygit" config.khanelivim.git.integrations) {
+    (lib.mkIf (!lib.elem "snacks-lazygit" config.xhuyzvim.git.integrations) {
       mode = "n";
       key = "<leader>gg";
       action.__raw = ''

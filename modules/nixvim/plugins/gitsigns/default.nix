@@ -2,7 +2,7 @@
 {
   plugins = {
     gitsigns = {
-      enable = lib.elem "gitsigns" config.khanelivim.git.integrations;
+      enable = lib.elem "gitsigns" config.xhuyzvim.git.integrations;
 
       lazyLoad.settings.event = "DeferredUIEnter";
 
@@ -282,7 +282,7 @@
         };
       }
     ]
-    ++ lib.optionals (config.khanelivim.git.diffViewer == "gitsigns") [
+    ++ lib.optionals (config.xhuyzvim.git.diffViewer == "gitsigns") [
       # Primary diff shortcut when gitsigns is the chosen diff viewer
       {
         mode = "n";

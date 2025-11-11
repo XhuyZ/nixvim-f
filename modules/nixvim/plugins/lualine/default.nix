@@ -21,7 +21,7 @@ let
 in
 {
   plugins.lualine = {
-    enable = config.khanelivim.ui.statusline == "lualine";
+    enable = config.xhuyzvim.ui.statusline == "lualine";
 
     lazyLoad.settings.event = [
       "VimEnter"

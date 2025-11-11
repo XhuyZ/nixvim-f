@@ -319,7 +319,7 @@
                 };
               };
             }
-            // (lib.optionalAttrs (config.khanelivim.git.diffViewer == "none") {
+            // (lib.optionalAttrs (config.xhuyzvim.git.diffViewer == "none") {
               "<leader>gD" = {
                 action.__raw = ''
                   function()

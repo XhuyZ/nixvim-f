@@ -1,6 +1,6 @@
 { lib, ... }:
 {
-  options.khanelivim.debugging = {
+  options.xhuyzvim.debugging = {
     adapters = lib.mkOption {
       type = lib.types.listOf (
         lib.types.enum [

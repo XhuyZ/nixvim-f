@@ -2,7 +2,7 @@
 {
   plugins = {
     persistence = {
-      enable = lib.elem "persistence" config.khanelivim.utilities.sessions;
+      enable = lib.elem "persistence" config.xhuyzvim.utilities.sessions;
 
       lazyLoad.settings.event = "BufReadPre";
     };

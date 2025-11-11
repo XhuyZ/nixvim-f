@@ -4,7 +4,7 @@
   ...
 }:
 {
-  plugins.which-key = lib.mkIf (config.khanelivim.ui.keybindingHelp == "which-key") {
+  plugins.which-key = lib.mkIf (config.xhuyzvim.ui.keybindingHelp == "which-key") {
     enable = true;
 
     lazyLoad.settings.event = "DeferredUIEnter";

@@ -11,7 +11,7 @@
 
   plugins = {
     faster = {
-      enable = lib.elem "faster" config.khanelivim.performance.optimizer;
+      enable = lib.elem "faster" config.xhuyzvim.performance.optimizer;
 
       lazyLoad.settings = {
         event = [

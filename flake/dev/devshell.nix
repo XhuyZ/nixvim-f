@@ -25,7 +25,7 @@
     in
     {
       devShells.default = pkgs.mkShell {
-        name = "Khanelivim development shell";
+        name = "XhuyZ development shell";
         meta.description = "Shell environment for modifying this Nix configuration";
         inherit packages;
 

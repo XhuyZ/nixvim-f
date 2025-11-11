@@ -1,7 +1,7 @@
 { config, lib, ... }:
 {
   plugins.ts-comments = {
-    enable = lib.elem "ts-comments" config.khanelivim.text.comments;
+    enable = lib.elem "ts-comments" config.xhuyzvim.text.comments;
 
     lazyLoad.settings.event = "DeferredUIEnter";
 

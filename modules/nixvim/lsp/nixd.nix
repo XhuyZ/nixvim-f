@@ -6,7 +6,7 @@
 }:
 {
   lsp.servers.nixd = {
-    enable = config.khanelivim.lsp.nix == "nixd";
+    enable = config.xhuyzvim.lsp.nix == "nixd";
 
     config.settings.nixd =
       # let
@@ -30,12 +30,6 @@
           command = [ "${lib.getExe pkgs.nixfmt}" ];
         };
         options = {
-          # flake-parts.expr = withFlakes "local.debug.options or global.debug.options";
-          # nixvim.expr = withFlakes "global.nixvimConfigurations.\${system}.default.options";
-          # NOTE: These will be passed in from outside using `.extend` from the flake installing this package
-          # nix-darwin.expr = ''${flake}.darwinConfigurations.khanelimac.options'';
-          # nixos.expr = ''${flake}.nixosConfigurations.khanelinix.options'';
-          # home-manager.expr = ''${nixos.expr}.home-manager.users.type.getSubOptions [ ]'';
         };
       };
   };

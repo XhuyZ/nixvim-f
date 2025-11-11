@@ -31,7 +31,7 @@
   plugins = {
     mini-basics.enable = true;
     mini-bracketed.enable = true;
-    mini-snippets = lib.mkIf (config.khanelivim.editor.snippet == "mini-snippets") {
+    mini-snippets = lib.mkIf (config.xhuyzvim.editor.snippet == "mini-snippets") {
       enable = true;
       settings = {
         snippets = {
@@ -43,7 +43,7 @@
       };
     };
 
-    mini-ai.enable = lib.elem "mini-ai" config.khanelivim.editor.textObjects;
+    mini-ai.enable = lib.elem "mini-ai" config.xhuyzvim.editor.textObjects;
     mini-align.enable = true;
     mini-icons = {
       enable = true;

@@ -5,7 +5,7 @@
   ...
 }:
 {
-  performance = lib.mkIf config.khanelivim.performance.optimizeEnable {
+  performance = lib.mkIf config.xhuyzvim.performance.optimizeEnable {
     byteCompileLua = {
       enable = true;
       configs = true;

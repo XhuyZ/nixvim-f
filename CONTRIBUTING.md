@@ -34,7 +34,7 @@ component: description
 - `conform: update deprecated setting`
 - `treesitter: fix duplicate package`
 - `kulala: fix duplicate package`
-- `khanelivim: format`
+- `xhuyzvim: format`
 - `flake.lock: update`
 
 ### Guidelines:
@@ -93,7 +93,7 @@ component: description
      tools)
 3. Generate the template: `new-plugin <plugin-name> <template-type>`
 4. Configure the plugin following the existing patterns
-5. Add appropriate options to the khanelivim module system
+5. Add appropriate options to the xhuyzvim module system
 6. Test the plugin works correctly
 7. Update documentation if needed
 
@@ -109,10 +109,9 @@ component: description
 ### Plugin Configuration Patterns
 
 - **Modular approach**: Each plugin should have its own module
-- **Conditional loading**: Use khanelivim options to conditionally enable
-  plugins
+- **Conditional loading**: Use xhuyzvim options to conditionally enable plugins
 - **Performance considerations**: Configure lazy loading where appropriate
-- **Consistent options**: Follow the khanelivim.* option namespace
+- **Consistent options**: Follow the xhuyzvim.* option namespace
 
 ## Submitting Changes
 
@@ -155,7 +154,7 @@ When adding plugins, place them in the appropriate category:
 Khanelivim uses a modular architecture:
 
 - **`flake.nix`**: Main flake configuration and outputs
-- **`modules/khanelivim/`**: Core khanelivim module with options
+- **`modules/xhuyzvim/`**: Core xhuyzvim module with options
 - **`modules/nixvim/`**: Nixvim-specific configuration modules
 - **`modules/nixvim/plugins/`**: Individual plugin configurations
 - **`overlays/`**: Nix package overlays

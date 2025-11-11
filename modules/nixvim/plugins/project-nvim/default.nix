@@ -6,9 +6,9 @@
 {
   plugins.project-nvim = {
     enable =
-      lib.elem "project-nvim" config.khanelivim.utilities.sessions && config.plugins.telescope.enable;
+      lib.elem "project-nvim" config.xhuyzvim.utilities.sessions && config.plugins.telescope.enable;
     enableTelescope =
-      lib.elem "project-nvim" config.khanelivim.utilities.sessions && config.plugins.telescope.enable;
+      lib.elem "project-nvim" config.xhuyzvim.utilities.sessions && config.plugins.telescope.enable;
     # package = pkgs.vimPlugins.project-nvim.overrideAttrs (_old: {
     #   patches = [
     #     (pkgs.fetchpatch {
@@ -23,8 +23,8 @@
     lazyLoad.settings =
       lib.mkIf
         (
-          lib.elem "project-nvim" config.khanelivim.utilities.sessions
-          && config.khanelivim.picker.tool == "telescope"
+          lib.elem "project-nvim" config.xhuyzvim.utilities.sessions
+          && config.xhuyzvim.picker.tool == "telescope"
         )
         {
           before.__raw =
@@ -35,8 +35,8 @@
           keys =
             lib.mkIf
               (
-                lib.elem "project-nvim" config.khanelivim.utilities.sessions
-                && config.khanelivim.picker.tool == "telescope"
+                lib.elem "project-nvim" config.xhuyzvim.utilities.sessions
+                && config.xhuyzvim.picker.tool == "telescope"
               )
               [
                 {
@@ -51,8 +51,8 @@
   keymaps =
     lib.mkIf
       (
-        lib.elem "project-nvim" config.khanelivim.utilities.sessions
-        && config.khanelivim.picker.tool == "telescope"
+        lib.elem "project-nvim" config.xhuyzvim.utilities.sessions
+        && config.xhuyzvim.picker.tool == "telescope"
         && !config.plugins.lz-n.enable
       )
       [

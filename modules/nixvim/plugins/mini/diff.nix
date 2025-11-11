@@ -1,7 +1,7 @@
 { lib, config, ... }:
 {
   plugins = {
-    mini-diff = lib.mkIf (config.khanelivim.git.diffViewer == "mini-diff") {
+    mini-diff = lib.mkIf (config.xhuyzvim.git.diffViewer == "mini-diff") {
       enable = true;
       settings = {
         view = {
@@ -32,7 +32,7 @@
         };
       }
     ]
-    ++ lib.optionals (config.khanelivim.git.diffViewer == "mini-diff") [
+    ++ lib.optionals (config.xhuyzvim.git.diffViewer == "mini-diff") [
       # Primary diff shortcut when mini-diff is the chosen diff viewer
       {
         mode = "n";

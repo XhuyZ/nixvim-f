@@ -8,7 +8,7 @@
     snacks = {
       settings = {
         scope = {
-          enabled = lib.elem "snacks-scope" config.khanelivim.editor.textObjects;
+          enabled = lib.elem "snacks-scope" config.xhuyzvim.editor.textObjects;
 
           treesitter = {
             blocks = {

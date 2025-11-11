@@ -31,15 +31,15 @@
       enable = true;
 
       settings = {
-        indent.enabled = config.khanelivim.ui.indentGuides == "snacks";
+        indent.enabled = config.xhuyzvim.ui.indentGuides == "snacks";
         input.enabled = true;
         scroll.enabled = true;
         statuscolumn = {
-          enabled = config.khanelivim.ui.statusColumn == "snacks";
+          enabled = config.xhuyzvim.ui.statusColumn == "snacks";
 
           folds = {
             open = true;
-            git_hl = lib.elem "gitsigns" config.khanelivim.git.integrations;
+            git_hl = lib.elem "gitsigns" config.xhuyzvim.git.integrations;
           };
         };
         quickfile.enabled = true;

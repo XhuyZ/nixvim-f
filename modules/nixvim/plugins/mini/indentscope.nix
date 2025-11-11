@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  autoCmd = lib.mkIf (config.khanelivim.ui.indentGuides == "mini-indentscope") [
+  autoCmd = lib.mkIf (config.xhuyzvim.ui.indentGuides == "mini-indentscope") [
     {
       event = [ "FileType" ];
       pattern = [
@@ -25,11 +25,11 @@
     }
   ];
 
-  plugins.mini-indentscope = lib.mkIf (config.khanelivim.ui.indentGuides == "mini-indentscope") {
+  plugins.mini-indentscope = lib.mkIf (config.xhuyzvim.ui.indentGuides == "mini-indentscope") {
     enable = true;
   };
 
-  keymaps = lib.mkIf (config.khanelivim.ui.indentGuides == "mini-indentscope") [
+  keymaps = lib.mkIf (config.xhuyzvim.ui.indentGuides == "mini-indentscope") [
     {
       mode = "n";
       key = "<leader>ui";

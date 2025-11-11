@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./options/ai.nix
+    ./options/ai.nix
     ./options/completion.nix
     ./options/dashboard.nix
     ./options/debugging.nix

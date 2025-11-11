@@ -2,11 +2,11 @@
 {
   plugins = {
     hop = {
-      enable = config.khanelivim.editor.motion == "hop";
+      enable = config.xhuyzvim.editor.motion == "hop";
     };
   };
 
-  keymaps = lib.optionals (config.khanelivim.editor.motion == "hop") [
+  keymaps = lib.optionals (config.xhuyzvim.editor.motion == "hop") [
     {
       key = "f";
       action.__raw = ''

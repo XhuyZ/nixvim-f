@@ -44,6 +44,6 @@
         };
       };
 
-      packages.default = config.packages.khanelivim;
+      packages.default = config.packages.xhuyzvim;
     };
 }

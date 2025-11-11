@@ -1,6 +1,6 @@
 { config, lib, ... }:
 {
-  plugins.rest.enable = config.khanelivim.editor.httpClient == "rest";
+  plugins.rest.enable = config.xhuyzvim.editor.httpClient == "rest";
 
   # NOTE: Works with files with .http file extension / http filetype
   # More example: https://github.com/rest-nvim/rest.nvim/tree/main/spec/examples

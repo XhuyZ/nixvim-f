@@ -5,8 +5,8 @@
 }:
 {
   plugins.nerdy = {
-    enable = config.khanelivim.picker.tool == "telescope";
-    enableTelescope = config.khanelivim.picker.tool == "telescope";
+    enable = config.xhuyzvim.picker.tool == "telescope";
+    enableTelescope = config.xhuyzvim.picker.tool == "telescope";
   };
 
   keymaps = lib.mkIf config.plugins.nerdy.enable [
