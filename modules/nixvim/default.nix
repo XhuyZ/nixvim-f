@@ -15,6 +15,7 @@ in
     ++ [
       # keep-sorted start
       ../khanelivim
+      ../xhuyzvim
       ./autocommands.nix
       ./dependencies.nix
       ./diagnostics.nix
